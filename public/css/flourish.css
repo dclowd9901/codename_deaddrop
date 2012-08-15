@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro&.css);
+.content {
+  margin-top: 200px;
+}
+.main-url-form {
+  text-align: center;
+}
+.main-url-form input[type=text] {
+  width: 750px;
+  height: 28px;
+  padding: 11px;
+  font-size: 24px;
+}
+.main-url-form ::-webkit-input-placeholder {
+  padding: 7px 0;
+  font-size: 24px;
+}
+.main-url-form :-moz-placeholder {
+  padding: 7px 0;
+  font-size: 24px;
+}
+.hero-unit ul {
+  margin: 20px 0;
+}
+.hero-unit ul li {
+  font-size: 24px;
+  line-height: 28px;
+}

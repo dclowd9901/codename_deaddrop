@@ -1,0 +1,170 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'bson@0.1.1' ]
+info using npm@1.1.16
+info using node@v0.6.15
+verbose config file /Users/dclowd9901/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose caching /node/projects/deaddrop/node_modules/backbone/package.json
+verbose caching /node/projects/deaddrop/node_modules/express/package.json
+verbose caching /node/projects/deaddrop/node_modules/hotnode/package.json
+verbose caching /node/projects/deaddrop/node_modules/mu2/package.json
+verbose caching /node/projects/deaddrop/node_modules/require/package.json
+verbose caching /node/projects/deaddrop/node_modules/underscore/package.json
+verbose caching /node/projects/deaddrop/node_modules/zepto/package.json
+verbose cache add [ 'bson@0.1.1', null ]
+silly cache add: name, spec, args [ undefined, 'bson@0.1.1', [ 'bson@0.1.1', null ] ]
+verbose parsed url { pathname: 'bson@0.1.1',
+verbose parsed url   path: 'bson@0.1.1',
+verbose parsed url   href: 'bson@0.1.1' }
+silly cache add: name, spec, args [ 'bson', '0.1.1', [ 'bson', '0.1.1' ] ]
+verbose parsed url { pathname: '0.1.1', path: '0.1.1', href: '0.1.1' }
+verbose addNamed [ 'bson', '0.1.1' ]
+verbose addNamed [ '0.1.1', '0.1.1' ]
+verbose raw, before any munging bson/0.1.1
+verbose url resolving [ 'https://registry.npmjs.org/', './bson/0.1.1' ]
+verbose url resolved https://registry.npmjs.org/bson/0.1.1
+verbose etag "11PG2YY1CW15C4A9AMKCTTOFP"
+http GET https://registry.npmjs.org/bson/0.1.1
+http 304 https://registry.npmjs.org/bson/0.1.1
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"11PG2YY1CW15C4A9AMKCTTOFP"',
+silly get cb     date: 'Wed, 15 Aug 2012 14:49:19 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag bson/0.1.1 from cache
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-darwin-x64-11.4.0',
+verbose bin dist   { shasum: '2bc8d871a545cd23bc35a4e42a47b107296d7bf9',
+verbose bin dist     tarball: 'http://registry.npmjs.org/bson/-/bson-0.1.1.tgz' } ]
+verbose caching /Users/dclowd9901/.npm/bson/0.1.1/package/package.json
+verbose loadDefaults bson@0.1.1
+silly resolved [ { name: 'bson',
+silly resolved     description: 'A bson parser for node.js and the browser',
+silly resolved     keywords: [ 'mongodb', 'bson', 'parser' ],
+silly resolved     version: '0.1.1',
+silly resolved     author: { name: 'Christian Amor Kvalheim', email: 'christkv@gmail.com' },
+silly resolved     contributors: [],
+silly resolved     repository: { type: 'git', url: 'git@github.com:christkv/bson.git' },
+silly resolved     bugs: 
+silly resolved      { email: 'node-mongodb-native@googlegroups.com',
+silly resolved        url: 'https://github.com/christkv/bson/issues' },
+silly resolved     devDependencies: { nodeunit: '0.7.3', gleak: '0.2.3' },
+silly resolved     config: { native: false },
+silly resolved     main: './lib/bson/index',
+silly resolved     directories: { lib: './lib/bson' },
+silly resolved     engines: { node: '>=0.4.0' },
+silly resolved     scripts: { install: 'node install.js', test: 'make test' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'Apache License, Version 2.0',
+silly resolved          url: 'http://www.apache.org/licenses/LICENSE-2.0' } ],
+silly resolved     _id: 'bson@0.1.1',
+silly resolved     dependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.16',
+silly resolved     _nodeVersion: 'v0.6.15',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'bson@0.1.1' } ]
+info into /node/projects/deaddrop bson@0.1.1
+info installOne bson@0.1.1
+verbose from cache /Users/dclowd9901/.npm/bson/0.1.1/package/package.json
+info unbuild /node/projects/deaddrop/node_modules/bson
+verbose unpack /Users/dclowd9901/.npm/bson/0.1.1/package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry README
+silly extracting entry install.js
+silly extracting entry .travis.yml
+silly extracting entry benchmarks/benchmarks.js
+silly extracting entry ext/index.js
+silly extracting entry ext/bson.cc
+silly extracting entry ext/bson.h
+silly extracting entry ext/Makefile
+silly extracting entry ext/wscript
+silly extracting entry lib/bson/binary.js
+silly extracting entry lib/bson/code.js
+silly extracting entry lib/bson/db_ref.js
+silly extracting entry lib/bson/double.js
+silly extracting entry lib/bson/float_parser.js
+silly extracting entry lib/bson/bson.js
+silly extracting entry lib/bson/long.js
+silly extracting entry lib/bson/max_key.js
+silly extracting entry lib/bson/min_key.js
+silly extracting entry lib/bson/objectid.js
+silly extracting entry lib/bson/symbol.js
+silly extracting entry lib/bson/binary_parser.js
+silly extracting entry lib/bson/timestamp.js
+silly extracting entry lib/bson/index.js
+silly extracting entry Makefile
+silly extracting entry test/browser/bson_test.js
+silly extracting entry test/browser/nodeunit.js
+silly extracting entry test/browser/suite2.js
+silly extracting entry test/browser/suite3.js
+silly extracting entry test/browser/test.html
+silly extracting entry test/node/bson_array_test.js
+silly extracting entry test/node/bson_parser_comparision_test.js
+silly extracting entry test/node/bson_test.js
+silly extracting entry test/node/bson_typed_array_test.js
+silly extracting entry test/node/test_full_bson.js
+silly extracting entry test/node/to_bson_test.js
+silly extracting entry test/node/data/test_gs_weird_bug.png
+silly extracting entry test/node/tools/utils.js
+silly extracting entry tools/gleak.js
+silly extracting entry tools/jasmine-1.1.0/jasmine-html.js
+silly extracting entry tools/jasmine-1.1.0/jasmine.js
+silly extracting entry tools/jasmine-1.1.0/jasmine.css
+silly extracting entry tools/jasmine-1.1.0/jasmine_favicon.png
+silly extracting entry tools/jasmine-1.1.0/MIT.LICENSE
+verbose caching /node/projects/deaddrop/node_modules/bson/package.json
+verbose loadDefaults bson@0.1.1
+info preinstall bson@0.1.1
+verbose from cache /node/projects/deaddrop/node_modules/bson/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /node/projects/deaddrop/node_modules/bson/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /node/projects/deaddrop/node_modules/bson
+info build /node/projects/deaddrop/node_modules/bson
+verbose from cache /node/projects/deaddrop/node_modules/bson/package.json
+verbose linkStuff [ false, false, false, '/node/projects/deaddrop/node_modules' ]
+info linkStuff bson@0.1.1
+verbose linkBins bson@0.1.1
+verbose linkMans bson@0.1.1
+verbose rebuildBundles bson@0.1.1
+info install bson@0.1.1
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "node install.js"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'node install.js' ],
+silly spawning   '/node/projects/deaddrop/node_modules/bson' ]
+info bson@0.1.1 Failed to exec install script
+info unbuild /node/projects/deaddrop/node_modules/bson
+verbose from cache /node/projects/deaddrop/node_modules/bson/package.json
+info preuninstall bson@0.1.1
+info uninstall bson@0.1.1
+verbose unbuild bson@0.1.1 [ true,
+verbose unbuild bson@0.1.1   '/node/projects/deaddrop/node_modules',
+verbose unbuild bson@0.1.1   '/node/projects/deaddrop/node_modules' ]
+info postuninstall bson@0.1.1
+ERR! bson@0.1.1 install: `node install.js`
+ERR! `sh "-c" "node install.js"` failed with 127
+ERR! 
+ERR! Failed at the bson@0.1.1 install script.
+ERR! This is most likely a problem with the bson package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     node install.js
+ERR! You can get their info via:
+ERR!     npm owner ls bson
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Darwin 11.4.0
+ERR! command "node" "/usr/local/bin/npm" "install" "bson@0.1.1"
+ERR! cwd /node/projects/deaddrop
+ERR! node -v v0.6.15
+ERR! npm -v 1.1.16
+ERR! code ELIFECYCLE
+ERR! message bson@0.1.1 install: `node install.js`
+ERR! message `sh "-c" "node install.js"` failed with 127
+ERR! errno {}
+verbose exit [ 1, true ]

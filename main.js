@@ -32,11 +32,12 @@ app.get('/new/:url', function( req, res ){
 	var UrlModel = require(__dirname + '/server/models/url.js').UrlModel;
 	
 	var url = new UrlModel( req.params.url );
-	
+	//
 	return ( url.isUrl ) {
 		return true;
 	} else {
 		return false;
+	}
 });
 	
 app.listen(8080);

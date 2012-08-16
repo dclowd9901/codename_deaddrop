@@ -3,11 +3,19 @@ var app = express();
 var mu = require('mu2');
 var util = require('util');
 var path = require('path');
-var urlGen = require('server/tools/urlgen');
+var mongo = require('mongodb');
 var EventEmitter = require('events').EventEmitter;
 
 eventsBus = new EventEmitter();
 mu.root = path.join(__dirname, 'server/views');
+
+var Db = mongo.Db,
+	ObjectID = mongo.BSONPure.BSON.ObjectID,
+	Server = mongo.Server;
+
+var db = new Db('node-mongo-examples', new Server( 'localhost', 27017, {}), {
+	native_parser: false
+});
 
 app.configure( function(){
 	app.use( express.static( 'public' ) );
@@ -32,11 +40,18 @@ app.get('/new/:url', function( req, res ){
 	var UrlModel = require(__dirname + '/server/models/url.js').UrlModel;
 	
 	var url = new UrlModel( req.params.url );
-	//
-	return ( url.isUrl ) {
-		return true;
+	
+	console.log( url );
+	
+	if ( url.params.isUrl ) {
+		url.urlDb( 'localhost', 27017 );
+		return url.genUri( function(a,b){
+			console.log(a);
+			console.log(b); 
+			console.log('called back') 
+		});
 	} else {
-		return false;
+		console.log( 'not url' );
 	}
 });
 	
